@@ -1,5 +1,5 @@
 import L from 'leaflet'
 
-export const AdvancedHeatmapLayer = {}
+export { AdvancedHeatmapLayer } from './lib'
 
 L.AdvancedHeatmapLayer = AdvancedHeatmapLayer
