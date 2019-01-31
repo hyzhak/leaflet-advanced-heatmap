@@ -1,5 +1,6 @@
 import L from 'leaflet'
 
-export { AdvancedHeatmapLayer } from './lib'
+import { AdvancedHeatmapLayer } from './lib'
+export { AdvancedHeatmapLayer }
 
 L.AdvancedHeatmapLayer = AdvancedHeatmapLayer
