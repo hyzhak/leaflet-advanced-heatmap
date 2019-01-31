@@ -1,9 +1,9 @@
 {
-  "name": "advanced-heatmap-leaflet-plugin",
+  "name": "leaflet-advanced-heatmap",
   "version": "0.1.0",
   "description": "leaflet plugin of advanced heatmap",
-  "browser": "dist/adv-heatmap.umd.js",
-  "main": "../../heatmap/advanced-heatmap-js/examples/leaflet-advanced-heatmap/dist/adv-heatmap.cjs.js",
+  "browser": "dist/leaflet-advanced-heatmap.umd.js",
+  "main": "dist/leaflet-advanced-heatmap.cjs.js",
   "module": "index.js",
   "scripts": {
     "build": "rollup -c",
@@ -61,5 +61,8 @@
     "webpack": "^4.29.0",
     "webpack-node-externals": "^1.7.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "peerDependencies": {
+    "leaflet": "^1.4.0"
+  }
 }
