@@ -22,7 +22,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
 
     new HtmlWebpackPlugin({
-      title: 'Hello advanced Heatmap'
+      title: 'Hello advanced Heatmap',
+      template: './index.html'
     })
   ],
 
