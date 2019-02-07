@@ -37,6 +37,23 @@ module.exports = {
     ]
   },
 
+  resolve: {
+    modules: [
+      // force webpack to use local node_modules of example, instead of lib node_modules
+      // the reason lib has leaflet in peer and dev dep
+      // so when webpack builds it look around and 1st what it founds is it libs node_modules
+      // as a reason commands like: instanceOf(InnerClass) could doesn't work
+      // because we would have 2 version of leaflet with different InnerClass.
+      // it was class Point in bound method
+      path.resolve(__dirname, 'node_modules'),
+      // but because we don't have all deps in example we need to bind original node_modules as well
+      path.resolve(__dirname, '..', '..', 'node_modules')
+    ],
+
+    // prefer module to recompile lib sources on example build
+    mainFields: ['module', 'browser', 'main']
+  },
+
   devServer: {
     compress: true,
     disableHostCheck: true,

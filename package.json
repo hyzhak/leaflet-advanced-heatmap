@@ -4,7 +4,7 @@
   "description": "leaflet plugin of advanced heatmap",
   "browser": "dist/leaflet-advanced-heatmap.umd.js",
   "main": "dist/leaflet-advanced-heatmap.cjs.js",
-  "module": "index.js",
+  "module": "./index.js",
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint lib examples tests index.js rollup.config.js",
