@@ -4,7 +4,7 @@ import clear from 'rollup-plugin-clear'
 import commonjs from 'rollup-plugin-commonjs'
 import license from 'rollup-plugin-license'
 import resolve from 'rollup-plugin-node-resolve'
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 
 import pkg from './package.json'
 
