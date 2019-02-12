@@ -45,5 +45,9 @@ for (let i = 0; i < numOfPoints; i++) {
   ])
 }
 
-const layer = new AdvancedHeatmapLayer(data)
+const layer = new AdvancedHeatmapLayer(data, {
+  heatmap: {
+    smooth: 1.0
+  }
+})
 layer.addTo(map)
