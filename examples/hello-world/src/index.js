@@ -10,10 +10,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map)
 
-L.marker([51.5, -0.09]).addTo(map)
-  .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-  .openPopup()
-
 const numOfPoints = 1000
 
 const width = 2
@@ -47,7 +43,7 @@ for (let i = 0; i < numOfPoints; i++) {
 
 const layer = new AdvancedHeatmapLayer(data, {
   heatmap: {
-    smooth: 1.0
+    smooth: false
   }
 })
 layer.addTo(map)
