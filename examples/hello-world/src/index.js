@@ -37,7 +37,8 @@ for (let i = 0; i < numOfPoints; i++) {
   data.push([
     x + 51.5 - width / 2,
     y - 0.09 - height / 2,
-    50 * Math.random()//, 0.1 + 0.2 * Math.random()
+    50 + 500 * Math.random(), //, 0.1 + 0.2 * Math.random(),
+    Math.random()
   ])
 }
 

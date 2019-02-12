@@ -37,7 +37,7 @@ for (let i = 0; i < numOfPoints; i++) {
   data.push([
     x + 51.5 - width / 2,
     y - 0.09 - height / 2,
-    50 * Math.random(),
+    500 + 500 * Math.random(),
     // alpha
     2 * Math.PI * Math.random(),
     // delta alpha
@@ -47,18 +47,32 @@ for (let i = 0; i < numOfPoints; i++) {
 
 const layer = new AdvancedHeatmapLayer(data, {
   heatmap: {
-    smooth: false
+    smooth: false,
+    features: {
+      alpha: {
+        source: {
+          idx: 3,
+          min: 0,
+          max: 2 * Math.PI
+        },
+
+        value: {
+          min: 0.1,
+          max: 0.8
+        }
+      }
+    }
   }
 })
 layer.addTo(map)
 
 setInterval(() => {
   data = data.map(([x, y, z, alpha, deltaAlpha]) => [
-    x + Math.sin(alpha) / z / 1000,
-    y + Math.cos(alpha) / z / 1000,
+    x + Math.sin(alpha) / z / 10,
+    y + Math.cos(alpha) / z / 10,
     z,
-    alpha + deltaAlpha,
-    deltaAlpha + (Math.random() -.5) / 10
+    Math.max(Math.min(alpha + deltaAlpha, 2 * Math.PI), 0),
+    deltaAlpha + (Math.random() - .5) / 10
   ])
   layer.setLatLngs(data);
-}, 1000/10);
+}, 1000 / 10);
