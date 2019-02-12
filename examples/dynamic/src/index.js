@@ -47,7 +47,7 @@ for (let i = 0; i < numOfPoints; i++) {
 
 const layer = new AdvancedHeatmapLayer(data, {
   heatmap: {
-    smooth: false,
+    // smooth: false,
     features: {
       alpha: {
         source: {
