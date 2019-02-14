@@ -839,6 +839,11 @@ acorn@^6.0.1, acorn@^6.0.2, acorn@^6.0.4, acorn@^6.0.5:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.0.6.tgz#cd75181670d5b99bdb1b1c993941d3a239ab1f56"
   integrity sha512-5M3G/A4uBSMIlfJ+h9W125vJvPFH/zirISsW5qfxF5YzEvXJCtolLoQvM5yZft0DvMcUrPGKPOlgEu55I6iUtA==
 
+advanced-heatmap@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/advanced-heatmap/-/advanced-heatmap-0.1.0.tgz#c6bd3a440f6c9c62ad04a975e317b4eae28ef75e"
+  integrity sha512-/pVLV7Doep/Mwwwwm917M372vcVMeTYhpWAChxeJKmc+U4d0dkH60HvCAYmLukgQ862EXveQPfPbPZoNR2oTXA==
+
 ajv-errors@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ajv-errors/-/ajv-errors-1.0.1.tgz#f35986aceb91afadec4102fbd85014950cefa64d"
