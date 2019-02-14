@@ -1,4 +1,4 @@
-# leaflet-advanced-heatmap
+# leaflet-advanced-heatmap [![Build Status](https://travis-ci.org/hyzhak/leaflet-advanced-heatmap.svg?branch=master)](https://travis-ci.org/hyzhak/leaflet-advanced-heatmap)
 Advanced heat map plugin for Leaflet
 
 ## Usage
