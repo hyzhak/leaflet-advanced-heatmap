@@ -64,6 +64,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
+    "advanced-heatmap": "^0.1.0",
     "lodash": "^4.17.11"
   },
   "peerDependencies": {
