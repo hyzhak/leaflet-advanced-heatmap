@@ -72,7 +72,7 @@ setInterval(() => {
     y + Math.cos(alpha) / z / 10,
     z,
     Math.max(Math.min(alpha + deltaAlpha, 2 * Math.PI), 0),
-    deltaAlpha + (Math.random() - .5) / 10
+    deltaAlpha + (Math.random() - 0.5) / 10
   ])
-  layer.setLatLngs(data);
-}, 1000 / 10);
+  layer.setLatLngs(data)
+}, 1000 / 10)
