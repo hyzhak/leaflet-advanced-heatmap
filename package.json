@@ -1,6 +1,6 @@
 {
   "name": "leaflet-advanced-heatmap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "leaflet plugin of advanced heatmap",
   "browser": "dist/leaflet-advanced-heatmap.umd.js",
   "main": "dist/leaflet-advanced-heatmap.cjs.js",
