@@ -8,6 +8,7 @@
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint lib examples tests index.js rollup.config.js",
+    "prepublish": "npm run build",
     "test": "mocha-webpack --opts ./tests/mocha.opts"
   },
   "repository": {
